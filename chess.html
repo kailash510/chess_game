@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<title>chess game</title>
+</head>
+<body>
+<div class="w3-display-container w3-gray w3-border w3-border-green w3-round-large w3-left" style="width:26%;height:1150px"><h1 class="w3-text-teal w3-padding-32 w3-center">PLAYER 1</h1></div>
+<div class="w3-display-container w3-gray w3-border w3-round-large w3-border-gray w3-left" style="width:48%;height:1150px">
+	<div class="w3-border w3-border-black w3-left " id="khuda" style="width:12.5%;height:143.85px"><button type="button" id="1" value="blackele" style="height:100%;width:100%;background: lightyellow" onclick="ltele()"><img src="blackele.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button"  id="2" value="blackhor" style="height:100%;width:100%;background:black"  onclick="lthor()"><img src="blackhor.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="blackcam" id="3" style="height:100%;width:100%;background:lightyellow" onclick="ltcam()"  ><img src="blackcam.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="4" type="button" value="blackkin" style="height:100%;width:100%;background:black" onclick="tkin()" ><img src="blackkin.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button"  id="5" value="blackque" style="height:100%;width:100%;background:lightyellow" onclick="tque()" class="w3-sand"><img src="blackque.jpg" style="width:80%; height:100px"/></button>	</div>
+        <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="blackcam" id="6" style="height:100%;width:100%;background:black" onclick="rtcam()"><img src="blackcam.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button"  id="7" value="blackhor" style="height:100%;width:100%;background:lightyellow" onclick="rthor()"><img src="blackhor.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" id="8" style="height:100%;width:100%" value="blackele" onclick="ltele()" class="w3-black"><img src="blackele.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="9" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t1paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="10" type="button" value="blackpaw"  style="height:100%;width:100%;background:lightyellow" onclick="t2paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="11" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t3paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="12" type="button" value="blackpaw"  style="height:100%;width:100%;background: lightyellow" onclick="t4paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="13" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t5paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="14" type="button" value="blackpaw"  style="height:100%;width:100%;background:lightyellow" onclick="t6paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="15" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t7paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="16" type="button" value="blackpaw" style="height:100%; width:100%;background:lightyellow" onclick="t8paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="17" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none1()"></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="18" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none2()"></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="19" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none3()"></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="20" type="button" value="none" style="height:100%;width:100%;;background:black" onclick="none4()"></button></div>
+	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="21" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none5()"></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="22" type="button" value="none" style="height:100%;width:100%;;background:black"  onclick="none6()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="23" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none7()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="24" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none8()"></button></div>	
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="25" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none9()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="26" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none10()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="27" type="button" value="none" style="height:100%;width:100%;;background:black"  onclick="none11()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="28" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none12()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="29" type="button" value="none" style="height:100%;width:100%;;background:black" onclick="none13()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="30" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none14()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="31" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none15()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="32" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none16()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="33" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none17()"></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="34" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none18()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="35" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none19()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="36" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none20()"></button></div>	
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="37" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none21()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="38" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none22()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="39" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none23()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="40" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none24()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="41" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none25()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="42" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none26()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="43" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none27()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="44" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none28()"></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="45" type="button" value="none" style="height:100%;width:100%;background: black"  onclick="none29()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="46" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none30()"></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="47" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none31()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="48" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none32()"></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="49" style="width:100%;height:100%;background:lightyellow" onclick="lb1paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" id="50"  value="whitepaw" style="width:100%;height:100%;background:black" onclick="lb2paw()"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="51" style="width:100%;height:100%;background:lightyellow" onclick="lb3paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="52" style="width:100%;height:100%;background:black" onclick="lb4paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="53" style="width:100%;height:100%;background:lightyellow" onclick="lb5paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="54" style="width:100%;height:100%;background:black" onclick="lb6paw()"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="55" style="width:100%;height:100%;background:lightyellow" onclick="lb7paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="56" style="width:100%;height:100%;background:black" onclick="lb8paw()" class="w3-black"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>	
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whiteele" style="width:100%;height:100%;background:black" onclick="lbele()"  id="57"><img src="whiteele.jpg " style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitehor" id="58" style="width:100%;height:100%;background:lightyellow" onclick="lbhor()" ><img src="whitehor.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitecam" id="59" style="height:100%;width:100%;background:black" onclick="lbcam()" ><img src="whitecam.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitekin" id="60" style="width:100%;height:100%;background:lightyellow" onclick="bkin()" ><img src="whitekin.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whiteque"  id="61" style="width:100%;height:100%;background:black" onclick="bque()" ><img src="whiteque.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitecam"  id="62" style="width:100%;height:100%;background:lightyellow" onclick="rbcam()" ><img src="whitecam.jpg" style="width:80%; height:100px"/></button></div>
+    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitehor"  id="63" style="width:100%;height:100%;background:black" onclick="rbhor()"><img src="whitehor.jpg" style="width:80%;height:100px"/></button></div>
+    <div class="w3-border w3-border-black w3-left" style="width:12.5%;height:143.85px"><button type="button" value="whiteele"  style="width:100%;height:100%;background:lightyellow" id="64" onclick="rbele()"><img src="whiteele.jpg" style="width:80%;height:100px"/></button></div>
+</div>
+<div class="w3-display-container w3-gray w3-border w3-border-green w3-left" style="width:26%;height:1150px"><h1 class="w3-text-teal w3-padding-32 w3-center">PLAYER 2</h1></div>
+<script>
+       alert("kk");
+    alert("me");
+   var previous;
+   var previousimg;
+   var previousval;
+    alert("yo");
+    var row1=[document.getElementById('1').value,document.getElementById('2').value,document.getElementById('3').value,document.getElementById('4').value,document.getElementById('5').value,document.getElementById('6').value,document.getElementById('7').value,document.getElementById('8').value];
+    var row2=[document.getElementById('9').value,document.getElementById('10').value,document.getElementById('11').value,document.getElementById('12').value,document.getElementById('13').value,document.getElementById('14').value,document.getElementById('15').value,document.getElementById('16').value];
+    var row3=[document.getElementById('17').value,document.getElementById('18').value,document.getElementById('19').value,document.getElementById('20').value,document.getElementById('21').value,document.getElementById('22').value,document.getElementById('23').value,document.getElementById('24').value];
+    var row4 =[document.getElementById('25').value,document.getElementById('26').value,document.getElementById('27').value,document.getElementById('28').value,document.getElementById('29').value,document.getElementById('30').value,document.getElementById('31').value,document.getElementById('32').value];
+    var row5=[document.getElementById('33').value,document.getElementById('34').value,document.getElementById('35').value,document.getElementById('36').value,document.getElementById('37').value,document.getElementById('38').value,document.getElementById('39').value,document.getElementById('40').value];
+    var row6 = [document.getElementById('41').value,document.getElementById('42').value,document.getElementById('43').value,document.getElementById('44').value,document.getElementById('45').value,document.getElementById('46').value,document.getElementById('47').value,document.getElementById('48').value];
+    var row7 = [document.getElementById('49').value,document.getElementById('50').value,document.getElementById('51').value,document.getElementById('52').value,document.getElementById('53').value,document.getElementById('54').value,document.getElementById('55').value,document.getElementById('56').value];
+    var row8 = [document.getElementById('57').value,document.getElementById('58').value,document.getElementById('59').value,document.getElementById('60').value,document.getElementById('61').value,document.getElementById('62').value,document.getElementById('63').value,document.getElementById('64').value];
+    var coulmn1 =  [document.getElementById('1').value,document.getElementById('9').value,document.getElementById('17').value,document.getElementById('25').value,document.getElementById('33').value,document.getElementById('41').value,document.getElementById('49').value,document.getElementById('57').value];
+    var coulmn2 = [document.getElementById('2').value,document.getElementById('10').value,document.getElementById('18').value,document.getElementById('26').value,document.getElementById('34').value,document.getElementById('42').value,document.getElementById('50').value,document.getElementById('58').value]; 
+    var coulmn3 =  [document.getElementById('3').value,document.getElementById('11').value,document.getElementById('19').value,document.getElementById('27').value,document.getElementById('35').value,document.getElementById('43').value,document.getElementById('51').value,document.getElementById('59').value]; 
+    var coulmn4 =  [document.getElementById('4').value,document.getElementById('12').value,document.getElementById('20').value,document.getElementById('28').value,document.getElementById('36').value,document.getElementById('44').value,document.getElementById('52').value,document.getElementById('60').value]; 
+    var coulmn5 = [document.getElementById('5').value,document.getElementById('13').value,document.getElementById('21').value,document.getElementById('29').value,document.getElementById('37').value,document.getElementById('45').value,document.getElementById('53').value,document.getElementById('61').value];  
+    var coulmn6 = [document.getElementById('6').value,document.getElementById('14').value,document.getElementById('22').value,document.getElementById('30').value,document.getElementById('38').value,document.getElementById('46').value,document.getElementById('54').value,document.getElementById('62').value]; 
+    var coulmn7 = [document.getElementById('7').value,document.getElementById('15').value,document.getElementById('23').value,document.getElementById('31').value,document.getElementById('39').value,document.getElementById('47').value,document.getElementById('55').value,document.getElementById('63').value]; 
+    var coulmn8 = [document.getElementById('8').value,document.getElementById('16').value,document.getElementById('24').value,document.getElementById('32').value,document.getElementById('40').value,document.getElementById('48').value,document.getElementById('56').value,document.getElementById('64').value];
+    
+                
+                
+                    if(x=="blackcam"&&document.getElementById("1").style.background=="lightyellow"){
+                        if(document.getElementById("10").value=="none"){
+                           document.getElementById("10").style.background="lightblue";
+                           if(document.getElementById("19").value=="none"){
+                            document.getElementById("19").style.background="lightblue";
+                               if(document.getElementById("28").value=="none"){
+                                  document.getElementById("28").style.background="lightblue";
+                                if(document.getElementById("37").value=="none"){
+                                   document.getElementById("37").style.background="lightblue";
+                                   if(document.getElementById("46").value=="none"){
+                                    document.getElementById("46").style.background="lightblue";
+                                     if(document.getElementById("55").value=="none"){
+                                        document.getElementById("55").style.background="lightblue";
+                                        if(document.getElementById("64").value=="none"){
+                                         document.getElementById("64").style.background="lightblue";
+                                        }
+                                }
+
+                           }
+                        }
+                    }
+                }
+            }
+               previousimg="blackcam.jpg";
+        }
+    
+                  previous="1";
+}
+
+   
+function lthor(){
+      var x = document.getElementById("2").value;
+   
+      if(x=="blackhor" && document.getElementById("2").style.background=="black"){
+        if(document.getElementById("17").value=="none"){
+            document.getElementById("17").style.background="lightblue";
+        }
+        if(document.getElementById("19").value=="none"){
+            document.getElementById("19").style.background="lightblue";
+        }
+        previousimg='blackhor.jpg';
+      }
+      if(document.getElementById("2").style.background=="red"){
+        document.getElementById("2").style.background="black";
+        document.getElementById("2").innerHTML='<img src=previousimg style="width:80%; height:100px"';
+        document.getElementById(previous).innerHTML="";
+      }
+      previous="2";
+      }  
+              function blackele(ida){
+               var x=document.getElementById("ida").value;
+               var rem=ida%8;
+               var row=ida/8;
+               if(rem>=1){
+                row++;
+               }
+               var col;
+               if(rem==0){
+                 col=8;
+               }
+               else col=rem;
+               
+                }
+            
+                var i = row;
+                var j=col;
+
+               for(k=col-2;k>=0;k--){
+                    if(row+"i"[k]=="none"){
+                        continue;
+                    }
+                    if(row+"i"[k]=="blackpaw" || row1[i]=="blackele" || row1[i]=="blackhor" || row1[i]=="blackcam" || row1[i]=="blackkin" || row1[i]=="blackque"){
+                        break;
+                    }
+                    if(row1[i]=="whitepaw"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(row1[i]=="whiteele"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(row1[i]=="whitephor"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                     }
+                    if(row1[i]=="whitecam"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(row1[i]=="whiteque"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(row1[i]=="whitekin"){
+                        var ida= i+1;
+                        document.getElementById(ida).style.background="red";
+                        alert("check mate");
+                        break;
+                    }
+                }
+                for(i=1;i<coulmn1.length;i++){
+
+                    if(coulmn1[i]=="none"){
+                        continue;
+                    }
+                    if(coulmn1[i]=="blackpaw" || coulmn1[i]=="blackele" || coulmn1[i]=="blackhor" || coulmn1[i]=="blackcam" || coulmn1[i]=="blackkin" || coulmn1[i]=="blackque"){
+                        break;
+                    }
+                    if(coulmn1[i]=="whitepaw"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(coulmn1[i]=="whiteele"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(coulmn1[i]=="whitehor"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(coulmn1[i]=="whitecam"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(coulmn1[i]=="whiteque"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        break;
+                    }
+                    if(coulmn1[i]=="whitekin"){
+                        var ida = i*8+1;
+                        document.getElementById(ida).style.background="red";
+                        alert("check mate");
+                        break;
+                    }
+                }
+                  previousimg="blackele.jpg";
+            }
+            if(x=="blackele"&&document.getElementById("1").style.background=="red"){
+                       document.getElementById("1").innerHTML='<img style="height:100px;width:80%" src=previousimg>';
+                       document.getElementById("1").style.background='lightyellow';
+                       document.getElementById(previous).innerHTML="";
+                           
+                    }
+            }
+
+</script>
+</body>
+</html>
