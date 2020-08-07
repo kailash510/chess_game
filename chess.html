@@ -1,260 +1,478 @@
-<!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.5"></meta>
 <title>chess game</title>
+<style>
+body{
+    background-color: powderblue;
+}
+.div1{
+    display:inline-block;
+    float:left;
+    border:1px solid #005500;
+    background-color: #333333;
+    margin-top:0px;
+}
+.div2{
+    display:inline-block;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.div3{
+    margin-top:0px;
+    display:inline-block;
+    float:right;
+    background-color: #333333;
+}
+</style>
 </head>
 <body>
-<div class="w3-display-container w3-gray w3-border w3-border-green w3-round-large w3-left" style="width:26%;height:1150px"><h1 class="w3-text-teal w3-padding-32 w3-center">PLAYER 1</h1></div>
-<div class="w3-display-container w3-gray w3-border w3-round-large w3-border-gray w3-left" style="width:48%;height:1150px">
-	<div class="w3-border w3-border-black w3-left " id="khuda" style="width:12.5%;height:143.85px"><button type="button" id="1" value="blackele" style="height:100%;width:100%;background: lightyellow" onclick="ltele()"><img src="blackele.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button"  id="2" value="blackhor" style="height:100%;width:100%;background:black"  onclick="lthor()"><img src="blackhor.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="blackcam" id="3" style="height:100%;width:100%;background:lightyellow" onclick="ltcam()"  ><img src="blackcam.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="4" type="button" value="blackkin" style="height:100%;width:100%;background:black" onclick="tkin()" ><img src="blackkin.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button"  id="5" value="blackque" style="height:100%;width:100%;background:lightyellow" onclick="tque()" class="w3-sand"><img src="blackque.jpg" style="width:80%; height:100px"/></button>	</div>
-        <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="blackcam" id="6" style="height:100%;width:100%;background:black" onclick="rtcam()"><img src="blackcam.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button"  id="7" value="blackhor" style="height:100%;width:100%;background:lightyellow" onclick="rthor()"><img src="blackhor.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" id="8" style="height:100%;width:100%" value="blackele" onclick="ltele()" class="w3-black"><img src="blackele.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="9" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t1paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="10" type="button" value="blackpaw"  style="height:100%;width:100%;background:lightyellow" onclick="t2paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="11" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t3paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="12" type="button" value="blackpaw"  style="height:100%;width:100%;background: lightyellow" onclick="t4paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="13" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t5paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="14" type="button" value="blackpaw"  style="height:100%;width:100%;background:lightyellow" onclick="t6paw()" ><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="15" type="button" value="blackpaw" style="height:100%;width:100%;background:black" onclick="t7paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="16" type="button" value="blackpaw" style="height:100%; width:100%;background:lightyellow" onclick="t8paw()"><img src="blackpaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="17" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none1()"></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="18" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none2()"></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="19" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none3()"></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="20" type="button" value="none" style="height:100%;width:100%;;background:black" onclick="none4()"></button></div>
-	<div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="21" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none5()"></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="22" type="button" value="none" style="height:100%;width:100%;;background:black"  onclick="none6()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="23" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none7()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="24" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none8()"></button></div>	
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="25" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none9()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="26" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none10()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="27" type="button" value="none" style="height:100%;width:100%;;background:black"  onclick="none11()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="28" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none12()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="29" type="button" value="none" style="height:100%;width:100%;;background:black" onclick="none13()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="30" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none14()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="31" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none15()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="32" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none16()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="33" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none17()"></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="34" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none18()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="35" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none19()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="36" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none20()"></button></div>	
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="37" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none21()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="38" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none22()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="39" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none23()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="40" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none24()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="41" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none25()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="42" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none26()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="43" type="button" value="none" style="height:100%;width:100%;background:black" onclick="none27()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="44" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none28()"></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="45" type="button" value="none" style="height:100%;width:100%;background: black"  onclick="none29()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="46" type="button" value="none" style="height:100%;width:100%;background:lightyellow" onclick="none30()"></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button id="47" type="button" value="none" style="height:100%;width:100%;background:black"  onclick="none31()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button id="48" type="button" value="none" style="height:100%;width:100%;background:lightyellow"  onclick="none32()"></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="49" style="width:100%;height:100%;background:lightyellow" onclick="lb1paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" id="50"  value="whitepaw" style="width:100%;height:100%;background:black" onclick="lb2paw()"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="51" style="width:100%;height:100%;background:lightyellow" onclick="lb3paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="52" style="width:100%;height:100%;background:black" onclick="lb4paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="53" style="width:100%;height:100%;background:lightyellow" onclick="lb5paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-	<div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="54" style="width:100%;height:100%;background:black" onclick="lb6paw()"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="55" style="width:100%;height:100%;background:lightyellow" onclick="lb7paw()" ><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitepaw" id="56" style="width:100%;height:100%;background:black" onclick="lb8paw()" class="w3-black"><img src="whitepaw.jpg" style="width:80%; height:100px"/></button></div>	
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whiteele" style="width:100%;height:100%;background:black" onclick="lbele()"  id="57"><img src="whiteele.jpg " style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitehor" id="58" style="width:100%;height:100%;background:lightyellow" onclick="lbhor()" ><img src="whitehor.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitecam" id="59" style="height:100%;width:100%;background:black" onclick="lbcam()" ><img src="whitecam.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitekin" id="60" style="width:100%;height:100%;background:lightyellow" onclick="bkin()" ><img src="whitekin.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whiteque"  id="61" style="width:100%;height:100%;background:black" onclick="bque()" ><img src="whiteque.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left w3-sand" style="width:12.5%;height:143.85px"><button type="button" value="whitecam"  id="62" style="width:100%;height:100%;background:lightyellow" onclick="rbcam()" ><img src="whitecam.jpg" style="width:80%; height:100px"/></button></div>
-    <div class="w3-border w3-border-sand w3-left w3-black" style="width:12.5%;height:143.85px"><button type="button" value="whitehor"  id="63" style="width:100%;height:100%;background:black" onclick="rbhor()"><img src="whitehor.jpg" style="width:80%;height:100px"/></button></div>
-    <div class="w3-border w3-border-black w3-left" style="width:12.5%;height:143.85px"><button type="button" value="whiteele"  style="width:100%;height:100%;background:lightyellow" id="64" onclick="rbele()"><img src="whiteele.jpg" style="width:80%;height:100px"/></button></div>
+<div class="div1" style="width:22%;height:1150px"><h1 style="color:green">PLAYER 1</h1></div>
+<div class="div2" style="width:52%;height:1150px;padding-left:60px;padding-right:auto">
+    <div style="width:11%;height:143.85px;display:inline-block"><button type="button" id="1" value="blackele" style="height:100%;width:100%;background:lightyellow;" onclick="blackele('1')"><img id="1im" src="blackele.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button type="button"  id="2" value="blackhor" style="height:100%;width:100%;background-color:black"  onclick="blackhor('2')"><img id ="2im"  src="blackhor.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button type="button" value="blackcam" id="3" style="height:100%;width:100%;background-color:lightyellow" onclick="blackcam('3')"  ><img id="3im" src="blackcam.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button id="4" type="button" value="blackkin" style="height:100%;width:100%;background-color:black" onclick="blackkin('4')" ><img id="4im" src="blackkin.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button type="button"  id="5" value="blackque" style="height:100%;width:100%;background-color:lightyellow" onclick="blackque('5')"><img id="5im" src="blackque.jpg" style="width:80%; height:100px;"/></button> </div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button type="button" value="blackcam" id="6" style="height:100%;width:100%;background-color:black" onclick="blackcam('6')"><img src="blackcam.jpg" id= "6im" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display:inline-block"><button type="button"  id="7" value="blackhor" style="height:100%;width:100%;background-color:lightyellow" onclick="blackhor('7')"><img id="7im" src="blackhor.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block;"><button type="button" id="8" value="blackele" style="height:100%;width:100%;background-color: black" onclick="blackele('8')"><img id="8im" src="blackele.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display:inline-block"><button id="9" type="button" value="blackpaw" style="height:100%;width:100%;background-color:black" onclick="blackpaw('9')"><img id="9im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block;"><button id="10" type="button" value="blackpaw"  style="height:100%;width:100%;background-color:lightyellow" onclick="blackpaw('10')" ><img id="10im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="11" type="button" value="blackpaw" style="height:100%;width:100%;background-color:black" onclick="blackpaw('11')" ><img id="11im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="12"  type="button" value="blackpaw"  style="height:100%;width:100%;background-color: lightyellow" onclick="blackpaw('12')"><img id="12im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="13" type="button" value="blackpaw" style="height:100%;width:100%;background-color:black" onclick="blackpaw('13')"><img id = "13im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block"><button id="14" type="button" value="blackpaw"  style="height:100%;width:100%;background-color:lightyellow" onclick="blackpaw('14')" ><img id="14im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="15" type="button" value="blackpaw" style="height:100%;width:100%;background-color:black" onclick="blackpaw('15')"><img id="15im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display:inline-block;"><button id="16" type="button" value="blackpaw" style="height:100%; width:100%;background-color:lightyellow" onclick="blackpaw('16')"><img id="16im" src="blackpaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="17" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('17')"><img id="17im" src="#"  style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="18" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('18')"><img id="18im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="19" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('19')"><img id="19im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display:inline-block;"><button id="20" type="button" value="none" style="height:100%;width:100%;;background-color:black" onclick="none('20')"><img id="20im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="21" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('21')"><img id="21im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="22" type="button" value="none" style="height:100%;width:100%;;background-color:black"  onclick="none('22')"><img id="22im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="23" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow" onclick="none('23')"><img id="23im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="24" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('24')"><img id="24im" src="#" style="width:80%;height:100px;"/></button></div>    
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="25" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('25')"><img id="25im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="26" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('26')"><img id="26im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="27" type="button" value="none" style="height:100%;width:100%;;background-color:black"  onclick="none('27')"><img id="27im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="28" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('28')"><img id="28im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="29" type="button" value="none" style="height:100%;width:100%;;background-color:black" onclick="none('29')"><img id="29im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="30" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('30')"><img id="30im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="31" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('31')"><img id="31im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="32" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('32')"><img id="32im" src="#" style="width:80%;height:100px;"/>></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="33" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('33')"><img id="33im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="34" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('34')"><img id="34im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="35" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('35')"><img id="35im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="36" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('36')"><img id="36im" src="#" style="width:80%;height:100px;"/></button></div>   
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="37" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('37')"><img id="37im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="38" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('38')"><img id="38im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="39" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('39')"><img id="39im" src="#" style="width:80%;height:100px;"/></button></div>
+   <div  style="width:11%;height:143.85px;display: inline-block;"><button id="40" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('40')"><img id="40im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="41" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('41')"><img id="41im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="42" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('42')"><img id="42im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button id="43" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('43')"><img id="43im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="44" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow" onclick="none('44')"><img id="44im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="45" type="button" value="none" style="height:100%;width:100%;background-color: black"  onclick="none('45')"><img id="45im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="46" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow" onclick="none('46')"><img id="46im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display:inline-block;"><button id="47" type="button" value="none" style="height:100%;width:100%;background-color:black"  onclick="none('47')"><img id="47im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="48" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('48')"><img id="48im" src="#" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="49" style="width:100%;height:100%;background-color:lightyellow" onclick="whitepaw('49')" ><img id="49im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" id="50"  value="whitepaw" style="width:100%;height:100%;background-color:black" onclick="whitepaw('50')"><img id="50im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button  type="button" value="whitepaw" id="51" style="width:100%;height:100%;background-color:lightyellow" onclick="whitepaw('51')" ><img id="51im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="52" style="width:100%;height:100%;background-color:black" onclick="whitepaw('52')" ><img id="52im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="53" style="width:100%;height:100%;background-color:lightyellow" onclick="whitepaw('53')" ><img id="53im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="54" style="width:100%;height:100%;background-color:black" onclick="whitepaw('54')"><img id="54im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="55" style="width:100%;height:100%;background-color:lightyellow" onclick="whitepaw('55')" ><img id="55im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitepaw" id="56" style="width:100%;height:100%;background-color:black" onclick="whitepaw('56')"><img id="56im" src="whitepaw.jpg" style="width:80%; height:100px;"/></button></div>  
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whiteele" id="57" style="width:100%;height:100%;background-color:black" onclick="whiteele('57')" ><img id="57im" src="whiteele.jpg " style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitehor" id="58" style="width:100%;height:100%;background-color:lightyellow" onclick="whitehor('58')" ><img id="58im" src="whitehor.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitecam" id="59" style="height:100%;width:100%;background-color:black" onclick="whitecam('59')" ><img id="59im" src="whitecam.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitekin" id="60" style="width:100%;height:100%;background-color:lightyellow" onclick="whitekin('60')" ><img id="60im" src="whitekin.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whiteque"  id="61" style="width:100%;height:100%;background-color:black" onclick="whiteque('61')" ><img id="61im" src="whiteque.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitecam"  id="62" style="width:100%;height:100%;background-color:lightyellow" onclick="whitecam('62')" ><img id="62im" src="whitecam.jpg" style="width:80%; height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whitehor"  id="63" style="width:100%;height:100%;background-color:black" onclick="whitehor('63')"><img id="63im" src="whitehor.jpg" style="width:80%;height:100px;"/></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button type="button" value="whiteele"  id="64" style="width:100%;height:100%;background-color:lightyellow" onclick="whiteele('64')"><img id="64im" src="whiteele.jpg" style="width:80%;height:100px;"/></button></div>
 </div>
-<div class="w3-display-container w3-gray w3-border w3-border-green w3-left" style="width:26%;height:1150px"><h1 class="w3-text-teal w3-padding-32 w3-center">PLAYER 2</h1></div>
+<div class="div3" style="width:22%;height:1150px"><h1 style="color:green">PLAYER 2</h1></div>
+</body>
 <script>
-       alert("kk");
-    alert("me");
-   var previous;
-   var previousimg;
-   var previousval;
-    alert("yo");
-    var row1=[document.getElementById('1').value,document.getElementById('2').value,document.getElementById('3').value,document.getElementById('4').value,document.getElementById('5').value,document.getElementById('6').value,document.getElementById('7').value,document.getElementById('8').value];
-    var row2=[document.getElementById('9').value,document.getElementById('10').value,document.getElementById('11').value,document.getElementById('12').value,document.getElementById('13').value,document.getElementById('14').value,document.getElementById('15').value,document.getElementById('16').value];
-    var row3=[document.getElementById('17').value,document.getElementById('18').value,document.getElementById('19').value,document.getElementById('20').value,document.getElementById('21').value,document.getElementById('22').value,document.getElementById('23').value,document.getElementById('24').value];
-    var row4 =[document.getElementById('25').value,document.getElementById('26').value,document.getElementById('27').value,document.getElementById('28').value,document.getElementById('29').value,document.getElementById('30').value,document.getElementById('31').value,document.getElementById('32').value];
-    var row5=[document.getElementById('33').value,document.getElementById('34').value,document.getElementById('35').value,document.getElementById('36').value,document.getElementById('37').value,document.getElementById('38').value,document.getElementById('39').value,document.getElementById('40').value];
-    var row6 = [document.getElementById('41').value,document.getElementById('42').value,document.getElementById('43').value,document.getElementById('44').value,document.getElementById('45').value,document.getElementById('46').value,document.getElementById('47').value,document.getElementById('48').value];
-    var row7 = [document.getElementById('49').value,document.getElementById('50').value,document.getElementById('51').value,document.getElementById('52').value,document.getElementById('53').value,document.getElementById('54').value,document.getElementById('55').value,document.getElementById('56').value];
-    var row8 = [document.getElementById('57').value,document.getElementById('58').value,document.getElementById('59').value,document.getElementById('60').value,document.getElementById('61').value,document.getElementById('62').value,document.getElementById('63').value,document.getElementById('64').value];
-    var coulmn1 =  [document.getElementById('1').value,document.getElementById('9').value,document.getElementById('17').value,document.getElementById('25').value,document.getElementById('33').value,document.getElementById('41').value,document.getElementById('49').value,document.getElementById('57').value];
-    var coulmn2 = [document.getElementById('2').value,document.getElementById('10').value,document.getElementById('18').value,document.getElementById('26').value,document.getElementById('34').value,document.getElementById('42').value,document.getElementById('50').value,document.getElementById('58').value]; 
-    var coulmn3 =  [document.getElementById('3').value,document.getElementById('11').value,document.getElementById('19').value,document.getElementById('27').value,document.getElementById('35').value,document.getElementById('43').value,document.getElementById('51').value,document.getElementById('59').value]; 
-    var coulmn4 =  [document.getElementById('4').value,document.getElementById('12').value,document.getElementById('20').value,document.getElementById('28').value,document.getElementById('36').value,document.getElementById('44').value,document.getElementById('52').value,document.getElementById('60').value]; 
-    var coulmn5 = [document.getElementById('5').value,document.getElementById('13').value,document.getElementById('21').value,document.getElementById('29').value,document.getElementById('37').value,document.getElementById('45').value,document.getElementById('53').value,document.getElementById('61').value];  
-    var coulmn6 = [document.getElementById('6').value,document.getElementById('14').value,document.getElementById('22').value,document.getElementById('30').value,document.getElementById('38').value,document.getElementById('46').value,document.getElementById('54').value,document.getElementById('62').value]; 
-    var coulmn7 = [document.getElementById('7').value,document.getElementById('15').value,document.getElementById('23').value,document.getElementById('31').value,document.getElementById('39').value,document.getElementById('47').value,document.getElementById('55').value,document.getElementById('63').value]; 
-    var coulmn8 = [document.getElementById('8').value,document.getElementById('16').value,document.getElementById('24').value,document.getElementById('32').value,document.getElementById('40').value,document.getElementById('48').value,document.getElementById('56').value,document.getElementById('64').value];
-    
-                
-                
-                    if(x=="blackcam"&&document.getElementById("1").style.background=="lightyellow"){
-                        if(document.getElementById("10").value=="none"){
-                           document.getElementById("10").style.background="lightblue";
-                           if(document.getElementById("19").value=="none"){
-                            document.getElementById("19").style.background="lightblue";
-                               if(document.getElementById("28").value=="none"){
-                                  document.getElementById("28").style.background="lightblue";
-                                if(document.getElementById("37").value=="none"){
-                                   document.getElementById("37").style.background="lightblue";
-                                   if(document.getElementById("46").value=="none"){
-                                    document.getElementById("46").style.background="lightblue";
-                                     if(document.getElementById("55").value=="none"){
-                                        document.getElementById("55").style.background="lightblue";
-                                        if(document.getElementById("64").value=="none"){
-                                         document.getElementById("64").style.background="lightblue";
-                                        }
-                                }
-
-                           }
-                        }
-                    }
-                }
-            }
-               previousimg="blackcam.jpg";
+    var preid;
+    var colors= [['lightyellow','black','lightyellow','black','lightyellow','black','lightyellow','black'],
+                ['black','lightyellow','black','lightyellow','black','lightyellow','black','lightyellow'],
+                ['lightyellow','black','lightyellow','black','lightyellow','black','lightyellow','black'],
+                ['black','lightyellow','black','lightyellow','black','lightyellow','black','lightyellow'],
+                ['lightyellow','black','lightyellow','black','lightyellow','black','lightyellow','black'],
+                ['black','lightyellow','black','lightyellow','black','lightyellow','black','lightyellow'],
+                ['lightyellow','black','lightyellow','black','lightyellow','black','lightyellow','black'],
+                ['black','lightyellow','black','lightyellow','black','lightyellow','black','lightyellow'],
+                ];
+    var values= [['blackele','blackhor','blackcam','blackkin','blackque','blackcam','blackhor','blackele'],
+                ['blackpaw','blackpaw','blackpaw','blackpaw','blackpaw','blackpaw','blackpaw','blackpaw'],
+                ['none','none','none','none','none','none','none','none'],
+                ['none','none','none','none','none','none','none','none'],
+                ['none','none','none','none','none','none','none','none'],
+                ['none','none','none','none','none','none','none','none'],
+                ['whitepaw','whitepaw','whitepaw','whitepaw','whitepaw','whitepaw','whitepaw','whitepaw'],
+                ['whiteele','whitehor','whitecam','whitekin','whiteque','whitecam','whitehor','whiteele'],
+                ];
+             
+      function blackele(id){
+        var i;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
         }
-    
-                  previous="1";
+        else col--;
+         var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="blue"||document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+        //replacing cureen id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        document.getElementById(id).onclick.value=document.getElementById(preid).value+"("+id+")";
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        document.getElementById(preid).onclick.value="none"+"("+preid+")";
+        values[row][col]="none";
+    }
+   
+    else{
+         //the case when we click on a button to move on with one of our playing move 
+         //now we change the colors when we click on a button where it can move,there we change color
+         //here an bug arise like when we c lick on a button then it will not change colors itself to orginal ones if we want to paly another move with our ghoti's so we will apply an mechanism where see it below
+         //mechanism first we change all colours of our chess items to original ones the apply the elements' properities  in ''else'' part only
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         // now we change the colours of each element where our element can go 
+            for(i=r+1;i<8;i++){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strb=="black"){
+                break;
+             }
+             else if(strn=="none"){
+                 var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+                break;
+             }
+          }
+          for(i=r-1;i>=0;i--){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                var i1=8*i+col+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strb=="black"){
+                break;
+             }
+             else if(strn=="none"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+                break;
+             }
+          }
+          for(i=col-1;i>=0;i--){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break;     
+             }
+             else if(strb=="black"){
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             break;     
+             }
+          }
+           for(i=col+1;i<8;i++){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break;     
+             }
+             else if(strb=="black"){
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             break;     
+             }
+           }
+           //now change the curren id to preid so that we can change all inputs
+         preid=id;
+    }
+ }
+ 
+
+    function blackhor(id){
+        var i,j;
+        alert("called");
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="blue"||document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        document.getElementById(id).onclick=document.getElementById(preid).value+"("+id+")";
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        document.getElementById(preid).onclick="none"+"("+preid+")";
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         if(r-2>=0&&c-1>=0){
+         strb=values[r-2][c-1].slice(0,5);
+         strw=values[r-2][c-1].slice(0,5);
+         strn=values[r-2][c-1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-2)+l-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+             else if(strn=="none"){
+             var i1=8*(r-2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+
+        if(r-2>=0&&c+1<8){
+         strb=values[r-2][c+1].slice(0,5);
+         strw=values[r-2][c+1].slice(0,5);
+         strn=values[r-2][c+1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+
+        if(r-1>=0&&c-2>=0){
+         strb=values[r-1][c-2].slice(0,5);
+         strw=values[r-1][c-2].slice(0,5);
+         strn=values[r-1][c-2].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue"; 
+             }
+        }
+
+         if(r-1>=0&&c+2<8){
+         strb=values[r-1][c+2].slice(0,5);
+         strw=values[r-1][c+2].slice(0,5);
+         strn=values[r-1][c+2].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+          
+           if(r+1<8&&c-2>=0){
+         strb=values[r+1][c-2].slice(0,5);
+         strw=values[r+1][c-2].slice(0,5);
+         strn=values[r+1][c-2].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+
+         if(r+1<8&&c+2<8){
+         strb=values[r+1][c+2].slice(0,5);
+         strw=values[r+1][c+2].slice(0,5);
+         strn=values[r+1][c+2].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red"; 
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        } 
+
+         if(r+2<8&&c-1>=0){
+         strb=values[r+2][c-1].slice(0,5);
+         strw=values[r+2][c-1].slice(0,5);
+         strn=values[r+2][c-1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";     
+             }
+             else if(strn=="none"){
+             var i1=8*(r+2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        } 
+
+           if(r+2<8&&c+1<8){
+         strb=values[r+2][c+1].slice(0,5);
+         strw=values[r+2][c+1].slice(0,5);
+         strn=values[r+2][c+1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r+2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+        preid=id;
+    } 
 }
 
-   
-function lthor(){
-      var x = document.getElementById("2").value;
-   
-      if(x=="blackhor" && document.getElementById("2").style.background=="black"){
-        if(document.getElementById("17").value=="none"){
-            document.getElementById("17").style.background="lightblue";
+  function none(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
         }
-        if(document.getElementById("19").value=="none"){
-            document.getElementById("19").style.background="lightblue";
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
         }
-        previousimg='blackhor.jpg';
-      }
-      if(document.getElementById("2").style.background=="red"){
-        document.getElementById("2").style.background="black";
-        document.getElementById("2").innerHTML='<img src=previousimg style="width:80%; height:100px"';
-        document.getElementById(previous).innerHTML="";
-      }
-      previous="2";
-      }  
-              function blackele(ida){
-               var x=document.getElementById("ida").value;
-               var rem=ida%8;
-               var row=ida/8;
-               if(rem>=1){
-                row++;
-               }
-               var col;
-               if(rem==0){
-                 col=8;
-               }
-               else col=rem;
-               
-                }
-            
-                var i = row;
-                var j=col;
+        else c--;
+      if(document.getElementById(id).style.background=="blue"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
 
-               for(k=col-2;k>=0;k--){
-                    if(row+"i"[k]=="none"){
-                        continue;
-                    }
-                    if(row+"i"[k]=="blackpaw" || row1[i]=="blackele" || row1[i]=="blackhor" || row1[i]=="blackcam" || row1[i]=="blackkin" || row1[i]=="blackque"){
-                        break;
-                    }
-                    if(row1[i]=="whitepaw"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(row1[i]=="whiteele"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(row1[i]=="whitephor"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                     }
-                    if(row1[i]=="whitecam"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(row1[i]=="whiteque"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(row1[i]=="whitekin"){
-                        var ida= i+1;
-                        document.getElementById(ida).style.background="red";
-                        alert("check mate");
-                        break;
-                    }
-                }
-                for(i=1;i<coulmn1.length;i++){
-
-                    if(coulmn1[i]=="none"){
-                        continue;
-                    }
-                    if(coulmn1[i]=="blackpaw" || coulmn1[i]=="blackele" || coulmn1[i]=="blackhor" || coulmn1[i]=="blackcam" || coulmn1[i]=="blackkin" || coulmn1[i]=="blackque"){
-                        break;
-                    }
-                    if(coulmn1[i]=="whitepaw"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(coulmn1[i]=="whiteele"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(coulmn1[i]=="whitehor"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(coulmn1[i]=="whitecam"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(coulmn1[i]=="whiteque"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        break;
-                    }
-                    if(coulmn1[i]=="whitekin"){
-                        var ida = i*8+1;
-                        document.getElementById(ida).style.background="red";
-                        alert("check mate");
-                        break;
-                    }
-                }
-                  previousimg="blackele.jpg";
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
             }
-            if(x=="blackele"&&document.getElementById("1").style.background=="red"){
-                       document.getElementById("1").innerHTML='<img style="height:100px;width:80%" src=previousimg>';
-                       document.getElementById("1").style.background='lightyellow';
-                       document.getElementById(previous).innerHTML="";
-                           
-                    }
-            }
-
-</script>
-</body>
+         }  
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id + 'im').src=document.getElementById(preid + 'im').src;
+        document.getElementById(id).onclick.value="blackhor('17')";
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        document.getElementById(preid).onclick="none"+"("+preid+")";
+        values[row][col]="none";
+        //we change preid value here does not matter
+    }
+}
+  </script>
 </html>
+
