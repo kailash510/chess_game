@@ -60,7 +60,7 @@ body{
     <div  style="width:11%;height:143.85px;display: inline-block;"><button id="29" type="button" value="none" style="height:100%;width:100%;;background-color:black" onclick="none('29')"><img id="29im" src="#" style="width:80%;height:100px;"/></button></div>
     <div  style="width:11%;height:143.85px;display: inline-block;"><button id="30" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('30')"><img id="30im" src="#" style="width:80%;height:100px;"/></button></div>
     <div style="width:11%;height:143.85px;display: inline-block;"><button id="31" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('31')"><img id="31im" src="#" style="width:80%;height:100px;"/></button></div>
-    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="32" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('32')"><img id="32im" src="#" style="width:80%;height:100px;"/>></button></div>
+    <div  style="width:11%;height:143.85px;display: inline-block;"><button id="32" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('32')"><img id="32im" src="#" style="width:80%;height:100px;"/></button></div>
     <div style="width:11%;height:143.85px;display: inline-block;"><button id="33" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('33')"><img id="33im" src="#" style="width:80%;height:100px;"/></button></div>
     <div style="width:11%;height:143.85px;display: inline-block;"><button id="34" type="button" value="none" style="height:100%;width:100%;background-color:black" onclick="none('34')"><img id="34im" src="#" style="width:80%;height:100px;"/></button></div>
     <div style="width:11%;height:143.85px;display: inline-block;"><button id="35" type="button" value="none" style="height:100%;width:100%;background-color:lightyellow"  onclick="none('35')"><img id="35im" src="#" style="width:80%;height:100px;"/></button></div>
@@ -133,7 +133,7 @@ body{
             r--;
         }
         else c--;
-      if(document.getElementById(id).style.background=="blue"||document.getElementById(id).style.background=="red"){
+      if(document.getElementById(id).style.background=="red"){
         //firstly we set all background colors that was set during single user's first click
         //here we are changing bgcolor of all boxes where our preid set them
         for(i=0;i<8;i++){
@@ -146,12 +146,220 @@ body{
         //replacing cureen id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
-        document.getElementById(id).onclick.value=document.getElementById(preid).value+"("+id+")";
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
         values[r][c]=document.getElementById(preid).value;
         //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
         document.getElementById(preid).value='none';
         document.getElementById(preid+'im').src="#";
-        document.getElementById(preid).onclick.value="none"+"("+preid+")";
+         if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
         values[row][col]="none";
     }
    
@@ -185,7 +393,6 @@ body{
                  var i1=8*i+c+1;
                 var ida=i1.toString();
                 document.getElementById(ida).style.background="blue";
-                break;
              }
           }
           for(i=r-1;i>=0;i--){
@@ -193,7 +400,7 @@ body{
              var strw=values[i][c].slice(0,5);
              var strn=values[i][c].slice(0,4);
              if(strw=="white"){
-                var i1=8*i+col+1;
+                var i1=8*i+c+1;
                 var ida=i1.toString();
                 document.getElementById(ida).style.background="red";
                 break;
@@ -205,10 +412,9 @@ body{
                 var i1=8*i+c+1;
                 var ida=i1.toString();
                 document.getElementById(ida).style.background="blue";
-                break;
              }
           }
-          for(i=col-1;i>=0;i--){
+          for(i=c-1;i>=0;i--){
              var strb=values[r][i].slice(0,5);
              var strw=values[r][i].slice(0,5);
              var strn=values[r][i].slice(0,4);
@@ -225,10 +431,9 @@ body{
              var i1=8*r+i+1;
              var ida=i1.toString();
              document.getElementById(ida).style.background="blue";
-             break;     
              }
           }
-           for(i=col+1;i<8;i++){
+           for(i=c+1;i<8;i++){
              var strb=values[r][i].slice(0,5);
              var strw=values[r][i].slice(0,5);
              var strn=values[r][i].slice(0,4);
@@ -245,7 +450,6 @@ body{
              var i1=8*r+i+1;
              var ida=i1.toString();
              document.getElementById(ida).style.background="blue";
-             break;     
              }
            }
            //now change the curren id to preid so that we can change all inputs
@@ -256,7 +460,6 @@ body{
 
     function blackhor(id){
         var i,j;
-        alert("called");
         var row=Math.floor(preid/8);
         var col=preid%8;
         if(col==0){
@@ -271,7 +474,7 @@ body{
             r--;
         }
         else c--;
-      if(document.getElementById(id).style.background=="blue"||document.getElementById(id).style.background=="red"){
+      if(document.getElementById(id).style.background=="red"){
         //firstly we set all background colors that was set during single user's first click
         //here we are changing bgcolor of all boxes where our preid set them
 
@@ -286,12 +489,222 @@ body{
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
-        document.getElementById(id).onclick=document.getElementById(preid).value+"("+id+")";
+        var x=document.getElementById(preid).value;
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
         values[r][c]=document.getElementById(preid).value;
         //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
         document.getElementById(preid).value='none';
         document.getElementById(preid+'im').src="#";
-        document.getElementById(preid).onclick="none"+"("+preid+")";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
         values[row][col]="none";
     }
     else{
@@ -307,7 +720,7 @@ body{
          strw=values[r-2][c-1].slice(0,5);
          strn=values[r-2][c-1].slice(0,4);
           if(strw=="white"){
-             var i1=8*(r-2)+l-1+1;
+             var i1=8*(r-2)+c-1+1;
              var ida=i1.toString();
              document.getElementById(ida).style.background="red";    
              }
@@ -429,6 +842,7 @@ body{
              document.getElementById(ida).style.background="blue";     
              }
         }
+         
         preid=id;
     } 
 }
@@ -452,7 +866,6 @@ body{
       if(document.getElementById(id).style.background=="blue"){
         //firstly we set all background colors that was set during single user's first click
         //here we are changing bgcolor of all boxes where our preid set them
-
         for(i=0;i<8;i++){
             for(j=0;j<8;j++){
                 var i1=i*8+j+1;
@@ -462,16 +875,3999 @@ body{
          }  
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
-        document.getElementById(id + 'im').src=document.getElementById(preid + 'im').src;
-        document.getElementById(id).onclick.value="blackhor('17')";
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        //here we change the onclick value to different to previous clicked element by using various function comparison
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
         values[r][c]=document.getElementById(preid).value;
         //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
         document.getElementById(preid).value='none';
         document.getElementById(preid+'im').src="#";
-        document.getElementById(preid).onclick="none"+"("+preid+")";
+         if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
         values[row][col]="none";
         //we change preid value here does not matter
     }
+}
+
+ function blackcam(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         i=r-1;j=c-1;
+        while(i>=0&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j--;
+        }
+        
+        i=r-1;j=c+1;
+        while(i>=0&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j++;
+        }
+
+           i=r+1;j=c-1;
+        while(i<8&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j--;
+        }
+        
+           i=r+1;j=c+1;
+        while(i<8&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j++;
+        }
+         
+        preid=id;
+    } 
+}
+
+
+
+
+
+
+ function blackkin(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+        alert("white color owner wins  !!");
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+        if(r+1<8){
+         strb=values[r+1][c].slice(0,5);
+         strw=values[r+1][c].slice(0,5);
+         strn=values[r+1][c].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+         if(r-1>=0){
+         strb=values[r-1][c].slice(0,5);
+         strw=values[r-1][c].slice(0,5);
+         strn=values[r-1][c].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+         if(c+1<8){
+         strb=values[r][c+1].slice(0,5);
+         strw=values[r][c+1].slice(0,5);
+         strn=values[r][c+1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+           if(c-1>=0){
+         strb=values[r][c-1].slice(0,5);
+         strw=values[r][c-1].slice(0,5);
+         strn=values[r][c-1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r+1<8&&c+1<8){
+         strb=values[r+1][c+1].slice(0,5);
+         strw=values[r+1][c+1].slice(0,5);
+         strn=values[r+1][c+1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r-1>0&&c+1<8){
+         strb=values[r-1][c+1].slice(0,5);
+         strw=values[r-1][c+1].slice(0,5);
+         strn=values[r-1][c+1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r-1>=0&&c-1>=0){
+         strb=values[r-1][c-1].slice(0,5);
+         strw=values[r-1][c-1].slice(0,5);
+         strn=values[r-1][c-1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+
+         if(r+1<8&&c-1>=0){
+         strb=values[r+1][c-1].slice(0,5);
+         strw=values[r+1][c-1].slice(0,5);
+         strn=values[r+1][c-1].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         
+        preid=id;
+    } 
+}
+
+
+
+
+function blackque(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         i=r-1;j=c-1;
+        while(i>=0&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j--;
+        }
+        
+        i=r-1;j=c+1;
+        while(i>=0&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j++;
+        }
+
+           i=r+1;j=c-1;
+        while(i<8&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j--;
+        }
+        
+           i=r+1;j=c+1;
+        while(i<8&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;  
+             }
+             else if(strb=="black"){
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j++;
+        }
+         
+
+          for(i=r+1;i<8;i++){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strb=="black"){
+                break;
+             }
+             else if(strn=="none"){
+                 var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=r-1;i>=0;i--){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strb=="black"){
+                break;
+             }
+             else if(strn=="none"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=c-1;i>=0;i--){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break;
+             }
+             else if(strb=="black"){
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             }
+          }
+           for(i=c+1;i<8;i++){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break;     
+             }
+             else if(strb=="black"){
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+           }
+        preid=id;
+    } 
+}
+
+
+ function blackpaw(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="whiteele"){
+            document.getElementById(id).onclick=function(){whiteele(id);};
+        }
+        if(x=="whitehor"){
+            document.getElementById(id).onclick=function(){whitehor(id);};
+        }
+        if(x=="whitecam"){
+            document.getElementById(id).onclick=function(){whitecam(id);};
+        }
+        if(x=="whitekin"){
+            document.getElementById(id).onclick=function(){whitekin(id);};
+        }
+        if(x=="whiteque"){
+            document.getElementById(id).onclick=function(){whiteque(id);};
+        }
+        if(x=="whitepaw"){
+            document.getElementById(id).onclick=function(){whitepaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         if(parseInt(id)>=9&&parseInt(id)<=16){
+        var strb=values[r+2][c].slice(0,5);
+         var strw=values[r+2][c].slice(0,5);
+         var strn=values[r+2][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r+2)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             strb=values[r+1][c].slice(0,5);
+             strw=values[r+1][c].slice(0,5);
+            strn=values[r+1][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+            if(c+1<8){
+            strb=values[r+1][c+1].slice(0,5);
+            strw=values[r+1][c+1].slice(0,5);
+            strn=values[r+1][c+1].slice(0,4);
+             if(strw=="white"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+         }
+            if(c-1>=0){
+            strb=values[r+1][c-1].slice(0,5);
+            strw=values[r+1][c-1].slice(0,5);
+            strn=values[r+1][c-1].slice(0,4);
+             if(strw=="white"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+             }   
+    }
+        else {
+        if(r+1<8){
+         var strb=values[r+1][c].slice(0,5);
+         var strw=values[r+1][c].slice(0,5);
+         var strn=values[r+1][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             if(c+1<8){
+             strb=values[r+1][c+1].slice(0,5);
+             strw=values[r+1][c+1].slice(0,5);
+             strn=values[r+1][c+1].slice(0,4);
+             if(strw=="white"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+         }
+            if(c-1>=0){
+             strb=values[r+1][c-1].slice(0,5);
+             strw=values[r+1][c-1].slice(0,5);
+            strn=values[r+1][c-1].slice(0,4);
+             if(strw=="white"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }   
+        }
+    }
+}
+        preid=id;
+    } 
+}
+
+// white color elements function
+
+          
+      function whiteele(id){
+        var i;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+         var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+        //replacing cureen id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+         if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+   
+    else{
+         //the case when we click on a button to move on with one of our playing move 
+         //now we change the colors when we click on a button where it can move,there we change color
+         //here an bug arise like when we c lick on a button then it will not change colors itself to orginal ones if we want to paly another move with our ghoti's so we will apply an mechanism where see it below
+         //mechanism first we change all colours of our chess items to original ones the apply the elements' properities  in ''else'' part only
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         // now we change the colours of each element where our element can go 
+            for(i=r+1;i<8;i++){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+               break;
+             }
+             else if(strb=="black"){
+                 var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strn=="none"){
+                 var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=r-1;i>=0;i--){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+             break;
+             }
+             else if(strb=="black"){
+                   var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="red";
+                break;
+             }
+             else if(strn=="none"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=c-1;i>=0;i--){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             break;     
+             }
+             else if(strb=="black"){
+              var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             }
+          }
+           for(i=c+1;i<8;i++){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             break;     
+             }
+             else if(strb=="black"){
+               var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             }
+           }
+           //now change the curren id to preid so that we can change all inputs
+         preid=id;
+    }
+ }
+ 
+
+    function whitehor(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         if(r-2>=0&&c-1>=0){
+         strb=values[r-2][c-1].slice(0,5);
+         strw=values[r-2][c-1].slice(0,5);
+         strn=values[r-2][c-1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+             else if(strn=="none"){
+             var i1=8*(r-2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+
+        if(r-2>=0&&c+1<8){
+         strb=values[r-2][c+1].slice(0,5);
+         strw=values[r-2][c+1].slice(0,5);
+         strn=values[r-2][c+1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+
+        if(r-1>=0&&c-2>=0){
+         strb=values[r-1][c-2].slice(0,5);
+         strw=values[r-1][c-2].slice(0,5);
+         strn=values[r-1][c-2].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue"; 
+             }
+        }
+
+         if(r-1>=0&&c+2<8){
+         strb=values[r-1][c+2].slice(0,5);
+         strw=values[r-1][c+2].slice(0,5);
+         strn=values[r-1][c+2].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+          
+           if(r+1<8&&c-2>=0){
+         strb=values[r+1][c-2].slice(0,5);
+         strw=values[r+1][c-2].slice(0,5);
+         strn=values[r+1][c-2].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c-2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+
+         if(r+1<8&&c+2<8){
+         strb=values[r+1][c+2].slice(0,5);
+         strw=values[r+1][c+2].slice(0,5);
+         strn=values[r+1][c+2].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red"; 
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+2+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        } 
+
+         if(r+2<8&&c-1>=0){
+         strb=values[r+2][c-1].slice(0,5);
+         strw=values[r+2][c-1].slice(0,5);
+         strn=values[r+2][c-1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";     
+             }
+             else if(strn=="none"){
+             var i1=8*(r+2)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        } 
+
+           if(r+2<8&&c+1<8){
+         strb=values[r+2][c+1].slice(0,5);
+         strw=values[r+2][c+1].slice(0,5);
+         strn=values[r+2][c+1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";
+             }
+             else if(strn=="none"){
+             var i1=8*(r+2)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";     
+             }
+        }
+         
+        preid=id;
+    } 
+}
+
+  
+ function whitecam(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         i=r-1;j=c-1;
+        while(i>=0&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+              var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j--;
+        }
+        
+        i=r-1;j=c+1;
+        while(i>=0&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+              var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j++;
+        }
+
+           i=r+1;j=c-1;
+        while(i<8&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j--;
+        }
+        
+           i=r+1;j=c+1;
+        while(i<8&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j++;
+        }
+         
+        preid=id;
+    } 
+}
+
+
+
+
+
+
+ function whitekin(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+        alert("black color owner wins  !!");
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+        if(r+1<8){
+         strb=values[r+1][c].slice(0,5);
+         strw=values[r+1][c].slice(0,5);
+         strn=values[r+1][c].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+         if(r-1>=0){
+         strb=values[r-1][c].slice(0,5);
+         strw=values[r-1][c].slice(0,5);
+         strn=values[r-1][c].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+         if(c+1<8){
+         strb=values[r][c+1].slice(0,5);
+         strw=values[r][c+1].slice(0,5);
+         strn=values[r][c+1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+        
+           if(c-1>=0){
+         strb=values[r][c-1].slice(0,5);
+         strw=values[r][c-1].slice(0,5);
+         strn=values[r][c-1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r+1<8&&c+1<8){
+         strb=values[r+1][c+1].slice(0,5);
+         strw=values[r+1][c+1].slice(0,5);
+         strn=values[r+1][c+1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r-1>0&&c+1<8){
+         strb=values[r-1][c+1].slice(0,5);
+         strw=values[r-1][c+1].slice(0,5);
+         strn=values[r-1][c+1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         if(r-1>=0&&c-1>=0){
+         strb=values[r-1][c-1].slice(0,5);
+         strw=values[r-1][c-1].slice(0,5);
+         strn=values[r-1][c-1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+
+         if(r+1<8&&c-1>=0){
+         strb=values[r+1][c-1].slice(0,5);
+         strw=values[r+1][c-1].slice(0,5);
+         strn=values[r+1][c-1].slice(0,4);
+          if(strb=="black"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             }
+             else if(strn=="none"){
+             var i1=8*(r+1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+        }
+         
+        preid=id;
+    } 
+}
+
+
+
+
+function whiteque(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         i=r-1;j=c-1;
+        while(i>=0&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j--;
+        }
+        
+        i=r-1;j=c+1;
+        while(i>=0&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i--;
+             j++;
+        }
+
+           i=r+1;j=c-1;
+        while(i<8&&j>=0){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j--;
+        }
+        
+           i=r+1;j=c+1;
+        while(i<8&&j<8){
+         strb=values[i][j].slice(0,5);
+         strw=values[i][j].slice(0,5);
+         strn=values[i][j].slice(0,4);
+          if(strw=="white"){
+             break;  
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break;
+             }
+             else if(strn=="none"){
+             var i1=8*(i)+j+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             i++;
+             j++;
+        }
+         
+
+          for(i=r+1;i<8;i++){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                break;
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+                break;
+             }
+             else if(strn=="none"){
+                 var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=r-1;i>=0;i--){
+             var strb=values[i][c].slice(0,5);
+             var strw=values[i][c].slice(0,5);
+             var strn=values[i][c].slice(0,4);
+             if(strw=="white"){
+                break;
+             }
+             else if(strb=="black"){
+             var i1=8*(i)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+                break;
+             }
+             else if(strn=="none"){
+                var i1=8*i+c+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background="blue";
+             }
+          }
+          for(i=c-1;i>=0;i--){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             break;     
+             }
+             else if(strb=="black"){
+             var i1=8*(r)+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             }
+          }
+           for(i=c+1;i<8;i++){
+             var strb=values[r][i].slice(0,5);
+             var strw=values[r][i].slice(0,5);
+             var strn=values[r][i].slice(0,4);
+             if(strw=="white"){
+             break;
+             }
+             else if(strb=="black"){
+             var i1=8*(r)+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";  
+             break; 
+             }
+             else if(strn=="none"){
+             var i1=8*r+i+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";
+             }
+           }
+        preid=id;
+    } 
+}
+
+
+ function whitepaw(id){
+        var i,j;
+        var row=Math.floor(preid/8);
+        var col=preid%8;
+        if(col==0){
+            col=7;
+            row--;
+        }
+        else col--;
+        var r=Math.floor(id/8);
+        var c=id%8;
+        if(c==0){
+            c=7;
+            r--;
+        }
+        else c--;
+      if(document.getElementById(id).style.background=="red"){
+        //firstly we set all background colors that was set during single user's first click
+        //here we are changing bgcolor of all boxes where our preid set them
+
+        for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }  
+       
+        //replacing current id's attributes to preid attributes
+        document.getElementById(id).value=document.getElementById(preid).value;
+        document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
+        var x=document.getElementById(preid).value;
+        if(x=="blackele"){
+            document.getElementById(id).onclick=function(){blackele(id);};
+        }
+        if(x=="blackhor"){
+            document.getElementById(id).onclick=function(){blackhor(id);};
+        }
+        if(x=="blackcam"){
+            document.getElementById(id).onclick=function(){blackcam(id);};
+        }
+        if(x=="blackkin"){
+            document.getElementById(id).onclick=function(){blackkin(id);};
+        }
+        if(x=="blackque"){
+            document.getElementById(id).onclick=function(){blackque(id);};
+        }
+        if(x=="blackpaw"){
+            document.getElementById(id).onclick=function(){blackpaw(id);};
+        }
+        values[r][c]=document.getElementById(preid).value;
+        //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
+        document.getElementById(preid).value='none';
+        document.getElementById(preid+'im').src="#";
+        //setting the function of previous element 
+        if(preid=='1'){
+        document.getElementById(preid).onclick=function(){none('1');};
+        }
+        else if(preid=='2'){
+        document.getElementById(preid).onclick=function(){none('2');};
+        }
+        else if(preid=='3'){
+        document.getElementById(preid).onclick=function(){none('3');};
+        }
+        else if(preid=='4'){
+        document.getElementById(preid).onclick=function(){none('4');};
+        }
+        else if(preid=='5'){
+        document.getElementById(preid).onclick=function(){none('5');};
+        }
+        else if(preid=='6'){
+        document.getElementById(preid).onclick=function(){none('6');};
+        }
+        else if(preid=='7'){
+        document.getElementById(preid).onclick=function(){none('7');};
+        }
+        else if(preid=='8'){
+        document.getElementById(preid).onclick=function(){none('8');};
+        }
+        else if(preid=='9'){
+        document.getElementById(preid).onclick=function(){none('9');};
+        }
+        else if(preid=='10'){
+        document.getElementById(preid).onclick=function(){none('10');};
+        }
+        else if(preid=='11'){
+        document.getElementById(preid).onclick=function(){none('11');};
+        }
+        else if(preid=='12'){
+        document.getElementById(preid).onclick=function(){none('12');};
+        }
+        else if(preid=='13'){
+        document.getElementById(preid).onclick=function(){none('13');};
+        }
+        else if(preid=='14'){
+        document.getElementById(preid).onclick=function(){none('14');};
+        }
+        else if(preid=='15'){
+        document.getElementById(preid).onclick=function(){none('15');};
+        }
+        else if(preid=='16'){
+        document.getElementById(preid).onclick=function(){none('16');};
+        }
+        else if(preid=='17'){
+        document.getElementById(preid).onclick=function(){none('17');};
+        }
+        else if(preid=='18'){
+        document.getElementById(preid).onclick=function(){none('18');};
+        }
+        else if(preid=='19'){
+        document.getElementById(preid).onclick=function(){none('19');};
+        }
+        else if(preid=='20'){
+        document.getElementById(preid).onclick=function(){none('20');};
+        }
+        else if(preid=='21'){
+        document.getElementById(preid).onclick=function(){none('21');};
+        }
+        else if(preid=='22'){
+        document.getElementById(preid).onclick=function(){none('22');};
+        }
+        else if(preid=='23'){
+        document.getElementById(preid).onclick=function(){none('23');};
+        }
+        else if(preid=='24'){
+        document.getElementById(preid).onclick=function(){none('24');};
+        }
+        else if(preid=='25'){
+        document.getElementById(preid).onclick=function(){none('25');};
+        }
+        else if(preid=='26'){
+        document.getElementById(preid).onclick=function(){none('26');};
+        }
+        else if(preid=='27'){
+        document.getElementById(preid).onclick=function(){none('27');};
+        }
+        else if(preid=='28'){
+        document.getElementById(preid).onclick=function(){none('28');};
+        }
+        else if(preid=='29'){
+        document.getElementById(preid).onclick=function(){none('29');};
+        }
+        else if(preid=='30'){
+        document.getElementById(preid).onclick=function(){none('30');};
+        }
+        else if(preid=='31'){
+        document.getElementById(preid).onclick=function(){none('31');};
+        }
+        else if(preid=='32'){
+        document.getElementById(preid).onclick=function(){none('32');};
+        }
+        else if(preid=='33'){
+        document.getElementById(preid).onclick=function(){none('33');};
+        }        
+        else if(preid=='34'){
+        document.getElementById(preid).onclick=function(){none('34');};
+        }
+        else if(preid=='35'){
+        document.getElementById(preid).onclick=function(){none('35');};
+        }
+        else if(preid=='36'){
+        document.getElementById(preid).onclick=function(){none('36');};
+        }
+        else if(preid=='37'){
+        document.getElementById(preid).onclick=function(){none('37');};
+        }
+        else if(preid=='38'){
+        document.getElementById(preid).onclick=function(){none('38');};
+        }
+        else if(preid=='39'){
+        document.getElementById(preid).onclick=function(){none('39');};
+        }
+        else if(preid=='40'){
+        document.getElementById(preid).onclick=function(){none('40');};
+        }
+        else if(preid=='41'){
+        document.getElementById(preid).onclick=function(){none('41');};
+        }
+        else if(preid=='42'){
+        document.getElementById(preid).onclick=function(){none('42');};
+        }
+        else if(preid=='43'){
+        document.getElementById(preid).onclick=function(){none('43');};
+        }
+        else if(preid=='44'){
+        document.getElementById(preid).onclick=function(){none('44');};
+        }
+        else if(preid=='45'){
+        document.getElementById(preid).onclick=function(){none('45');};
+        }
+        else if(preid=='46'){
+        document.getElementById(preid).onclick=function(){none('46');};
+        }
+        else if(preid=='47'){
+        document.getElementById(preid).onclick=function(){none('47');};
+        }
+        else if(preid=='48'){
+        document.getElementById(preid).onclick=function(){none('48');};
+        }
+        else if(preid=='49'){
+        document.getElementById(preid).onclick=function(){none('49');};
+        }
+        else if(preid=='50'){
+        document.getElementById(preid).onclick=function(){none('50');};
+        }
+        else if(preid=='51'){
+        document.getElementById(preid).onclick=function(){none('51');};
+        }
+        else if(preid=='52'){
+        document.getElementById(preid).onclick=function(){none('52');};
+        }
+        else if(preid=='53'){
+        document.getElementById(preid).onclick=function(){none('53');};
+        }
+        else if(preid=='54'){
+        document.getElementById(preid).onclick=function(){none('54');};
+        }
+        else if(preid=='55'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='56'){
+        document.getElementById(preid).onclick=function(){none('55');};
+        }
+        else if(preid=='57'){
+        document.getElementById(preid).onclick=function(){none('56');};
+        }
+        else if(preid=='58'){
+        document.getElementById(preid).onclick=function(){none('57');};
+        }
+        else if(preid=='59'){
+        document.getElementById(preid).onclick=function(){none('58');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='61'){
+        document.getElementById(preid).onclick=function(){none('61');};
+        }
+        else if(preid=='62'){
+        document.getElementById(preid).onclick=function(){none('62');};
+        }
+        else if(preid=='63'){
+        document.getElementById(preid).onclick=function(){none('63');};
+        }
+        else if(preid=='64'){
+        document.getElementById(preid).onclick=function(){none('64');};
+        }
+        values[row][col]="none";
+    }
+    else{
+         for(i=0;i<8;i++){
+            for(j=0;j<8;j++){
+                var i1=i*8+j+1;
+                var ida=i1.toString();
+                document.getElementById(ida).style.background=colors[i][j];
+            }
+         }
+         if(parseInt(id)>=49&&parseInt(id)<=56){
+        var strb=values[r-2][c].slice(0,5);
+         var strw=values[r-2][c].slice(0,5);
+         var strn=values[r-2][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r-2)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             strb=values[r-1][c].slice(0,5);
+             strw=values[r-1][c].slice(0,5);
+            strn=values[r-1][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             if(c-1>=0){
+            strb=values[r-1][c-1].slice(0,5);
+            strw=values[r-1][c-1].slice(0,5);
+            strn=values[r-1][c-1].slice(0,4);
+             if(strw=="black"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+         }
+           if(c+1<8){
+            strb=values[r-1][c+1].slice(0,5);
+            strw=values[r-1][c+1].slice(0,5);
+            strn=values[r-1][c+1].slice(0,4);
+             if(strw=="black"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }  
+             } 
+}
+        else {
+        if(r-1>=0){
+         var strb=values[r-1][c].slice(0,5);
+         var strw=values[r-1][c].slice(0,5);
+         var strn=values[r-1][c].slice(0,4);
+             if(strn=="none"){
+             var i1=8*(r-1)+c+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="blue";    
+             }
+             if(c-1>=0){
+             strb=values[r-1][c-1].slice(0,5);
+             strw=values[r-1][c-1].slice(0,5);
+             strn=values[r-1][c-1].slice(0,4);
+             if(strw=="black"){
+             var i1=8*(r-1)+c-1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+         }   
+            if(c+1<8){
+             strb=values[r-1][c+1].slice(0,5);
+             strw=values[r-1][c+1].slice(0,5);
+            strn=values[r-1][c+1].slice(0,4);
+             if(strw=="black"){
+             var i1=8*(r-1)+c+1+1;
+             var ida=i1.toString();
+             document.getElementById(ida).style.background="red";    
+             }
+             }   
+        }
+    }
+      preid=id;
+    } 
 }
   </script>
 </html>
