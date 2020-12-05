@@ -145,14 +145,14 @@ body{
                 var ida=i1.toString();
                 document.getElementById(ida).style.background=colors[i][j];
                 //here should change all image src to their exact ones;
-                if(document.getElementById(ida+'im').src=='file:///C:/Users/Kailash%20V/Desktop/chess/blue.jpg')
+                if(document.getElementById(ida+'im').src=="file:///C:/Users/Kailash%20V/Desktop/chess/blue.jpg")
                 document.getElementById(ida+'im').src=colors[i][j]+'.jpg';
             }
          }
         //replacing cureen id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
         document.getElementById('player1').innerHTML+=
-        '<button type="button" id="blackele" style="width:23%;height:120px;"><img src="blackele.jpg" style="width:100%;height:100%">';
+        '<button type="button" id="blackele" style="width:23%;height:120px;"><img src="blackele.jpg" style="width:100%;height:100%"></button>';
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="whiteele"){
@@ -506,7 +506,7 @@ body{
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
          document.getElementById('player1').innerHTML+=
-        '<button type="button" id="blackhor" style="width:23%;height:120px;"><img src="blackhor.jpg" style="width:100%;height:100%">';
+        '<button type="button" id="blackhor" style="width:23%;height:120px;"><img src="blackhor.jpg" style="width:100%;height:100%"></button>';
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="whiteele"){
@@ -879,8 +879,6 @@ body{
 
   function none(id){
         var i,j;
-        if(document.getElementById(preid).value=='blackele')
-        alert("called");
         var row=Math.floor(preid/8);
         var col=preid%8;
         if(col==0){
@@ -895,7 +893,7 @@ body{
             r--;
         }
         else c--;
-      if(document.getElementById(id).style.background=="blue"){
+    if(document.getElementById(id).style.background=="blue"){
         //firstly we set all background colors that was set during single user's first click
         //here we are changing bgcolor of all boxes where our preid set them
         for(i=0;i<8;i++){
@@ -1009,7 +1007,7 @@ body{
         //setting all attributes of previous element where we clicked like value,src,onclick,values[][];
         document.getElementById(preid).value='none';
         document.getElementById(preid+'im').src=colors[row][col]+'.jpg';
-         if(preid=='1'){
+        if(preid=='1'){
         document.getElementById(preid).onclick=function(){none('1');};
         }
         else if(preid=='2'){
@@ -1241,7 +1239,7 @@ body{
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
         document.getElementById('player1').innerHTML+=
-        '<button type="button" id="blackcam" style="width:23%;height:120px;"><img src="blackcam.jpg" style="width:100%;height:100%">';
+        '<button type="button" id="blackcam" style="width:23%;height:120px;"><img src="blackcam.jpg" style="width:100%;height:100%"></button>';
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="whiteele"){
@@ -2013,7 +2011,7 @@ function blackque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
          document.getElementById('player1').innerHTML+=
-        '<button type="button" id="blackque" style="width:23%;height:120px;"><img src="blackque.jpg" style="width:100%;height:100%">';
+        '<button type="button" id="blackque" style="width:23%;height:120px;"><img src="blackque.jpg" style="width:100%;height:100%"></button>';
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="whiteele"){
@@ -2459,7 +2457,7 @@ function blackque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
          document.getElementById('player1').innerHTML+=
-        '<button type="button" id="blackpaw" style="width:23%;height:120px;"><img src="blackpaw.jpg" style="width:100%;height:100%">';
+        '<button type="button" id="blackpaw" style="width:23%;height:120px;"><img src="blackpaw.jpg" style="width:100%;height:100%"></button>';
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="whiteele"){
@@ -2801,7 +2799,7 @@ function blackque(id){
         //replacing cureen id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
          document.getElementById('player2').innerHTML+=
-        '<button type="button" id="whiteele" style="width:23%;height:120px;"><img src="whiteele.jpg" style="width:100%;height:100%">'; 
+        '<button type="button" id="whiteele" style="width:23%;height:120px;"><img src="whiteele.jpg" style="width:100%;height:100%"></button>'; 
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="blackele"){
@@ -2992,19 +2990,19 @@ function blackque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
@@ -3156,7 +3154,7 @@ function blackque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
           document.getElementById('player2').innerHTML+=
-        '<button type="button" id="whitehor" style="width:23%;height:120px;"><img src="whitehor.jpg" style="width:100%;height:100%">'; 
+        '<button type="button" id="whitehor" style="width:23%;height:120px;"><img src="whitehor.jpg" style="width:100%;height:100%"></button>'; 
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="blackele"){
@@ -3348,19 +3346,19 @@ function blackque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
@@ -3561,7 +3559,7 @@ function blackque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
           document.getElementById('player2').innerHTML+=
-        '<button type="button" id="whitecam" style="width:23%;height:120px;"><img src="whitecam.jpg" style="width:100%;height:100%">'; 
+        '<button type="button" id="whitecam" style="width:23%;height:120px;"><img src="whitecam.jpg" style="width:100%;height:100</button>'; 
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="blackele"){
@@ -3753,19 +3751,19 @@ function blackque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
@@ -4120,19 +4118,19 @@ function blackque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
@@ -4333,7 +4331,7 @@ function whiteque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
           document.getElementById('player2').innerHTML+=
-        '<button type="button" id="whiteque" style="width:23%;height:120px;"><img src="whiteque.jpg" style="width:100%;height:100%">'; 
+        '<button type="button" id="whiteque" style="width:23%;height:120px;"><img src="whiteque.jpg" style="width:100%;height:100%"></button>'; 
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="blackele"){
@@ -4525,19 +4523,19 @@ function whiteque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
@@ -4779,7 +4777,7 @@ function whiteque(id){
         //replacing current id's attributes to preid attributes
         document.getElementById(id).value=document.getElementById(preid).value;
           document.getElementById('player2').innerHTML+=
-        '<button type="button" id="whitepaw" style="width:23%;height:120px;"><img src="whitepaw.jpg" style="width:100%;height:100%">'; 
+        '<button type="button" id="whitepaw" style="width:23%;height:120px;"><img src="whitepaw.jpg" style="width:100%;height:100%"></button>'; 
         document.getElementById(id+'im').src=document.getElementById(preid+'im').src;
         var x=document.getElementById(preid).value;
         if(x=="blackele"){
@@ -4971,19 +4969,19 @@ function whiteque(id){
         document.getElementById(preid).onclick=function(){none('55');};
         }
         else if(preid=='56'){
-        document.getElementById(preid).onclick=function(){none('55');};
-        }
-        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('56');};
         }
-        else if(preid=='58'){
+        else if(preid=='57'){
         document.getElementById(preid).onclick=function(){none('57');};
         }
-        else if(preid=='59'){
+        else if(preid=='58'){
         document.getElementById(preid).onclick=function(){none('58');};
         }
-        else if(preid=='60'){
+        else if(preid=='59'){
         document.getElementById(preid).onclick=function(){none('59');};
+        }
+        else if(preid=='60'){
+        document.getElementById(preid).onclick=function(){none('60');};
         }
         else if(preid=='61'){
         document.getElementById(preid).onclick=function(){none('61');};
